@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Poker.ViewdeCardController">
+   <children>
+      <HBox layoutX="30.0" layoutY="33.0" spacing="20.0">
+         <children>
+            <ImageView fx:id="ViewDeck" fitHeight="343.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ViewCartaActual" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <StackPane>
+               <children>
+                  <Button fx:id="shflbtn" mnemonicParsing="false" onAction="#shoffol" text="Shuffle" StackPane.alignment="BOTTOM_RIGHT">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button fx:id="Siguientebtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#SiguientebtnPushed" text="Siguiente Carta" StackPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
